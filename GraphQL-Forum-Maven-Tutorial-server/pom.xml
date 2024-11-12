@@ -48,7 +48,7 @@
 					<!-- https://graphql-maven-plugin-project.graphql-java-generator.com/graphql-maven-plugin/generateServerCode-mojo.html -->
 					<packageName>org.forum.server.graphql</packageName>
 					<scanBasePackages>org.forum.server.impl, org.forum.server.jpa</scanBasePackages>
-					<customScalars>
+					<customScalars> 
 						<customScalar>
 							<graphQLTypeName>Date</graphQLTypeName>
 							<javaType>java.util.Date</javaType>
@@ -58,6 +58,7 @@
 					</customScalars>
 					<!-- The parameters below change the 1.x default behavior. They are set to respect the behavior of the future 2.x versions -->
 					<copyRuntimeSources>false</copyRuntimeSources>
+				
 					<generateBatchLoaderEnvironment>true</generateBatchLoaderEnvironment>
 					<separateUtilityClasses>true</separateUtilityClasses>
 					<skipGenerationIfSchemaHasNotChanged>true</skipGenerationIfSchemaHasNotChanged>
